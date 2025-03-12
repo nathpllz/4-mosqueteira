@@ -7,57 +7,11 @@ header {
 
 }
 
- .ana{
-    button {
-        color: white;
-        background: blue;
-        transition: background 1s;
-      }
-      
-      button:hover,
-      button:focus {
-        background: red;
-      }
-
- }
-
-.tais{
-    button {
-        color: white;
-        background: blue;
-        transition: background 1s;
-      }
-      
-      button:hover,
-      button:focus {
-        background: red;
-
-}
-
-.isadora{
-    button {
-        color: white;
-        background: blue;
-        transition: background 1s;
-      }
-      
-      button:hover,
-      button:focus {
-        background: red;
-
-}
-
-.nat{
-    button {
-        color: white;
-        background: blue;
-        transition: background 1s;
-      }
-      
-      button:hover,
-      button:focus {
-        background: red;
-
+.girls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
 #ana{
