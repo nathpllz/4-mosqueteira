@@ -9,9 +9,9 @@ header {
     align-items: center;
     justify-content: center;
     position: relative;
-        color: white;
-        background: blue;
-        transition: background 1s;
+    color: white;
+    background: blue;
+    transition: background 1s;
 
       
 
