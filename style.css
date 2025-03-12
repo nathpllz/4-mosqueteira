@@ -9,6 +9,7 @@ header {
 
  .ana{
     button {
+        text-decoration: none;
         color: white;
         background: blue;
         transition: background 1s;
