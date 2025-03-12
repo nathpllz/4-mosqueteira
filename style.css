@@ -9,16 +9,12 @@ header {
     align-items: center;
     justify-content: center;
     position: relative;
-   
-    .girls {
         color: white;
         background: blue;
         transition: background 1s;
-      }
+
       
-      button:hover,
-      button:focus {
-        background: red;
+
 }
     #ana{
         
