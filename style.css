@@ -9,7 +9,6 @@ header {
 
  .ana{
     button {
-        text-decoration: none;
         color: white;
         background: blue;
         transition: background 1s;
@@ -23,26 +22,90 @@ header {
  }
 
 .tais{
-
+    button {
+        color: white;
+        background: blue;
+        transition: background 1s;
+      }
+      
+      button:hover,
+      button:focus {
+        background: red;
 
 }
 
 .isadora{
-
+    button {
+        color: white;
+        background: blue;
+        transition: background 1s;
+      }
+      
+      button:hover,
+      button:focus {
+        background: red;
 
 }
 
 .nat{
-
+    button {
+        color: white;
+        background: blue;
+        transition: background 1s;
+      }
+      
+      button:hover,
+      button:focus {
+        background: red;
 
 }
 
 #ana{
-text-decoration: none;
+    button {
+        color: white;
+        background: blue;
+        transition: background 1s;
+      }
+      
+      button:hover,
+      button:focus {
+        background: red;
 
 }
 
-#nat{
+#tais{
+    button {
+        color: white;
+        background: blue;
+        transition: background 1s;
+      }
+      
+      button:hover,
+      button:focus {
+        background: red;
+}
 
+#isadora{
+    button {
+        color: white;
+        background: blue;
+        transition: background 1s;
+      }
+      
+      button:hover,
+      button:focus {
+        background: red;
+}
+
+#nat{
+    button {
+        color: white;
+        background: blue;
+        transition: background 1s;
+      }
+      
+      button:hover,
+      button:focus {
+        background: red;
 
 }
