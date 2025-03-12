@@ -8,7 +8,16 @@ header {
 }
 
  .ana{
-
+    button {
+        color: white;
+        background: blue;
+        transition: background 1s;
+      }
+      
+      button:hover,
+      button:focus {
+        background: red;
+      }
 
  }
 
@@ -29,5 +38,5 @@ header {
 
 #nat{
 
-    
+
 }
