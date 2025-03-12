@@ -12,54 +12,54 @@ header {
     align-items: center;
     justify-content: center;
     position: relative;
-}
 
-#ana{
-    button {
-        color: white;
-        background: blue;
-        transition: background 1s;
-      }
-      
-      button:hover,
-      button:focus {
-        background: red;
-
-}
-
-#tais{
-    button {
-        color: white;
-        background: blue;
-        transition: background 1s;
-      }
-      
-      button:hover,
-      button:focus {
-        background: red;
-}
-
-#isadora{
-    button {
-        color: white;
-        background: blue;
-        transition: background 1s;
-      }
-      
-      button:hover,
-      button:focus {
-        background: red;
-}
-
-#nat{
-    button {
-        color: white;
-        background: blue;
-        transition: background 1s;
-      }
-      
-      button:hover,
-      button:focus {
-        background: red;
-
+    #ana{
+        button {
+            color: white;
+            background: blue;
+            transition: background 1s;
+          }
+          
+          button:hover,
+          button:focus {
+            background: red;
+    
+    }
+    
+    #tais{
+        button {
+            color: white;
+            background: blue;
+            transition: background 1s;
+          }
+          
+          button:hover,
+          button:focus {
+            background: red;
+    }
+    
+    #isadora{
+        button {
+            color: white;
+            background: blue;
+            transition: background 1s;
+          }
+          
+          button:hover,
+          button:focus {
+            background: red;
+    }
+    
+    #nat{
+        button {
+            color: white;
+            background: blue;
+            transition: background 1s;
+          }
+          
+          button:hover,
+          button:focus {
+            background: red;
+    
+    }
 }
