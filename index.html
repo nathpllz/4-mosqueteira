@@ -1,88 +1,30 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Portal de Ciências</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-  <!-- Cabeçalho -->
-  <header>
-    <div class="header-container">
-      <div class="logo">
-        <h1>Site Educacional</h1>
-      </div>
-      <nav class="nav-externa">
-        <ul>
-          <li><a href="matematica.html">Matemática</a></li>
-          <li><a href="fisica.html">Física</a></li>
-          <li><a href="quimica.html">Química</a></li>
-        </ul>
-      </nav>
-      <!-- Botão para menu interno -->
-      <button class="menu-btn" onclick="toggleMenu()">Menu Interno</button>
-    </div>
-    <!-- Menu Interno -->
-    <nav class="nav-interna">
-      <ul>
-        <li><a href="#">Provas</a></li>
-        <li><a href="#">Relatórios</a></li>
-        <li><a href="#">Exercícios</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <h1>Bem-vindo ao Portal de Ciências</h1>
+        <nav class="menu-externo">
+            <a href="matematica.html">Matemática</a>
+            <a href="fisica.html">Física</a>
+            <a href="quimica.html">Química</a>
+        </nav>
+    </header>
 
-  <!-- Corpo Principal -->
-  <main>
-    <section class="disciplina" id="matematica">
-      <h2><a href="matematica.html">Matemática</a></h2>
-      <ul>
-        <li><a href="matematica.html#provas">Prova de Álgebra</a></li>
-        <li><a href="matematica.html#relatorios">Relatório de Cálculo</a></li>
-        <li><a href="matematica.html#exercicios">Exercícios de Geometria</a></li>
-      </ul>
-    </section>
+    <main>
+        <section>
+            <h2>Escolha sua disciplina!</h2>
+            <p>Clique em uma disciplina para acessar conteúdos e atividades incríveis.</p>
+        </section>
+    </main>
 
-    <section class="disciplina" id="fisica">
-      <h2><a href="fisica.html">Física</a></h2>
-      <ul>
-        <li><a href="fisica.html#provas">Prova de Mecânica</a></li>
-        <li><a href="fisica.html#relatorios">Relatório de Termodinâmica</a></li>
-        <li><a href="fisica.html#exercicios">Exercícios de Óptica</a></li>
-      </ul>
-    </section>
-
-    <section class="disciplina" id="quimica">
-      <h2><a href="quimica.html">Química</a></h2>
-      <ul>
-        <li><a href="quimica.html#provas">Prova de Química Orgânica</a></li>
-        <li><a href="quimica.html#relatorios">Relatório de Físico-Química</a></li>
-        <li><a href="quimica.html#exercicios">Exercícios de Química Geral</a></li>
-      </ul>
-    </section>
-  </main>
-
-  <!-- Rodapé -->
-  <footer>
-    <div class="footer-container">
-      <div class="footer-info">
-        <p>© 2025 Site Educacional. Todos os direitos reservados.</p>
-        <p>Contato: info@educacional.com</p>
-      </div>
-      <div class="social-links">
-        <a href="#">Facebook</a>
-        <a href="#">Instagram</a>
-        <a href="#">LinkedIn</a>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    function toggleMenu() {
-      const menu = document.querySelector('.nav-interna');
-      menu.classList.toggle('active');
-    }
-  </script>
+    <footer>
+        <p>&copy; 2025 Portal de Ciências</p>
+    </footer>
+  <script src="script.js"></script>
 </body>
 </html>
