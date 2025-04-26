@@ -20,7 +20,7 @@ header {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.nav-container {
+.header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,13 +29,19 @@ header {
   padding: 0 20px;
 }
 
-nav ul {
+.logo h1 {
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-externa ul {
   list-style-type: none;
   display: flex;
   gap: 30px;
 }
 
-nav a {
+.nav-externa a {
   color: white;
   text-decoration: none;
   font-weight: 600;
@@ -45,17 +51,13 @@ nav a {
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-nav a:hover {
+.nav-externa a:hover {
   background-color: #ff3399;
   transform: scale(1.1);
 }
 
 /* Menu Interno */
-.nav-interna-container {
-  position: relative;
-}
-
-.toggle-menu {
+.menu-btn {
   background-color: #ff3399;
   color: white;
   padding: 10px 20px;
@@ -67,7 +69,7 @@ nav a:hover {
   transition: background-color 0.3s ease;
 }
 
-.toggle-menu:hover {
+.menu-btn:hover {
   background-color: #ff66b2;
 }
 
@@ -148,18 +150,37 @@ main {
   transform: translateX(5px);
 }
 
+/* Rodapé */
 footer {
   background-color: #222;
   color: white;
   text-align: center;
   padding: 20px;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
+  margin-top: 50px;
 }
 
-footer p {
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-info p {
   font-size: 14px;
+}
+
+.social-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  margin-left: 15px;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #ff66b2;
 }
 
 /* Responsividade */
@@ -169,14 +190,19 @@ footer p {
     gap: 20px;
   }
 
-  .nav-container {
+  .header-container {
     flex-direction: column;
-    gap: 15px;
+    align-items: flex-start;
   }
 
-  .toggle-menu {
+  .menu-btn {
     width: 100%;
     font-size: 18px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
