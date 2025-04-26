@@ -3,12 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Site de Disciplinas</title>
+  <title>Site Educacional</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Cabeçalho -->
   <header>
-    <div class="nav-container">
+    <div class="header-container">
+      <div class="logo">
+        <h1>Site Educacional</h1>
+      </div>
       <nav class="nav-externa">
         <ul>
           <li><a href="matematica.html">Matemática</a></li>
@@ -16,21 +20,22 @@
           <li><a href="quimica.html">Química</a></li>
         </ul>
       </nav>
-      <div class="nav-interna-container">
-        <button class="toggle-menu" onclick="toggleMenu()">Menu Interno</button>
-        <nav class="nav-interna">
-          <ul>
-            <li><a href="#">Provas</a></li>
-            <li><a href="#">Relatórios</a></li>
-            <li><a href="#">Exercícios</a></li>
-          </ul>
-        </nav>
-      </div>
+      <!-- Botão para menu interno -->
+      <button class="menu-btn" onclick="toggleMenu()">Menu Interno</button>
     </div>
+    <!-- Menu Interno -->
+    <nav class="nav-interna">
+      <ul>
+        <li><a href="#">Provas</a></li>
+        <li><a href="#">Relatórios</a></li>
+        <li><a href="#">Exercícios</a></li>
+      </ul>
+    </nav>
   </header>
 
+  <!-- Corpo Principal -->
   <main>
-    <section id="matematica" class="disciplina">
+    <section class="disciplina" id="matematica">
       <h2><a href="matematica.html">Matemática</a></h2>
       <ul>
         <li><a href="matematica.html#provas">Prova de Álgebra</a></li>
@@ -39,7 +44,7 @@
       </ul>
     </section>
 
-    <section id="fisica" class="disciplina">
+    <section class="disciplina" id="fisica">
       <h2><a href="fisica.html">Física</a></h2>
       <ul>
         <li><a href="fisica.html#provas">Prova de Mecânica</a></li>
@@ -48,7 +53,7 @@
       </ul>
     </section>
 
-    <section id="quimica" class="disciplina">
+    <section class="disciplina" id="quimica">
       <h2><a href="quimica.html">Química</a></h2>
       <ul>
         <li><a href="quimica.html#provas">Prova de Química Orgânica</a></li>
@@ -58,9 +63,19 @@
     </section>
   </main>
 
+  <!-- Rodapé -->
   <footer>
-    <p>© 2025 Site pro cep.</p>
-    <p>Contato: @nathpllz</p>
+    <div class="footer-container">
+      <div class="footer-info">
+        <p>© 2025 Site Educacional. Todos os direitos reservados.</p>
+        <p>Contato: info@educacional.com</p>
+      </div>
+      <div class="social-links">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
   </footer>
 
   <script>
