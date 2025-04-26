@@ -1,208 +1,102 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* Fonte bonita */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
 
-/* Estilo do corpo */
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #f8f0f8; /* Rosa claro */
-  color: #4f4f4f;
-  line-height: 1.6;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(135deg, #ffe6f0 0%, #ffd6eb 100%);
+    color: #444;
+    overflow-x: hidden;
 }
 
 /* Cabeçalho */
 header {
-  background: linear-gradient(135deg, #ff66b2, #ff3399);
-  color: white;
-  padding: 20px 0;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(90deg, #ff66a3, #ff99cc);
+    padding: 30px 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+header h1 {
+    margin: 0;
+    color: white;
+    font-size: 3em;
+    animation: fadeInDown 1s ease-in-out;
 }
 
-.logo h1 {
-  font-size: 30px;
-  color: white;
-  font-weight: bold;
+/* Menus */
+nav.menu-externo, nav.menu-interno {
+    margin-top: 15px;
 }
 
-.nav-externa ul {
-  list-style-type: none;
-  display: flex;
-  gap: 30px;
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 12px 22px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    display: inline-block;
 }
 
-.nav-externa a {
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 18px;
-  padding: 10px 15px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+nav.menu-externo a:hover, nav.menu-interno a:hover {
+    background-color: white;
+    color: #ff3399;
+    transform: scale(1.1);
 }
 
-.nav-externa a:hover {
-  background-color: #ff3399;
-  transform: scale(1.1);
-}
-
-/* Menu Interno */
-.menu-btn {
-  background-color: #ff3399;
-  color: white;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.menu-btn:hover {
-  background-color: #ff66b2;
-}
-
-.nav-interna {
-  display: none;
-  position: absolute;
-  top: 50px;
-  right: 0;
-  background-color: #ff66b2;
-  padding: 15px;
-  border-radius: 8px;
-}
-
-.nav-interna.active {
-  display: block;
-}
-
-.nav-interna ul {
-  list-style-type: none;
-  display: block;
-  gap: 10px;
-}
-
-.nav-interna a {
-  color: white;
-  font-size: 16px;
-  text-decoration: none;
-  padding: 8px 15px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.nav-interna a:hover {
-  background-color: #ff3399;
-  transform: scale(1.05);
-}
-
-/* Estilo das seções de disciplinas */
+/* Corpo do site */
 main {
-  padding: 50px 20px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
+    padding: 50px 20px;
 }
 
-.disciplina {
-  background-color: #ffffff;
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+/* Seções */
+section {
+    margin: 50px auto;
+    max-width: 900px;
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
 }
 
-.disciplina:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+/* Quando a seção aparece */
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
-.disciplina h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-  color: #ff66b2;
-}
-
-.disciplina a {
-  display: block;
-  margin: 10px 0;
-  font-size: 16px;
-  color: #4f4f4f;
-  text-decoration: none;
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.disciplina a:hover {
-  color: #ff3399;
-  transform: translateX(5px);
+section h2 {
+    color: #ff3385;
+    font-size: 2em;
 }
 
 /* Rodapé */
 footer {
-  background-color: #222;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  margin-top: 50px;
+    background: #ff66a3;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+    font-size: 1em;
 }
 
-.footer-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-info p {
-  font-size: 14px;
-}
-
-.social-links a {
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
-  margin-left: 15px;
-  transition: color 0.3s ease;
-}
-
-.social-links a:hover {
-  color: #ff66b2;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-  main {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .header-container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .menu-btn {
-    width: 100%;
-    font-size: 18px;
-  }
-
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-  }
+/* Animações extras */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
