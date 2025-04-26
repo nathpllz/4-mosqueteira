@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Física - Site Educacional</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <nav class="nav-externa">
+        <ul>
+          <li><a href="index.html">Página Inicial</a></li>
+          <li><a href="matematica.html">Matemática</a></li>
+          <li><a href="quimica.html">Química</a></li>
+        </ul>
+      </nav>
+      <div class="nav-interna-container">
+        <button class="toggle-menu" onclick="toggleMenu()">Menu Interno</button>
+        <nav class="nav-interna">
+          <ul>
+            <li><a href="#provas">Provas</a></li>
+            <li><a href="#relatorios">Relatórios</a></li>
+            <li><a href="#exercicios">Exercícios</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="provas">
+      <h2>Provas de Física</h2>
+      <p>Aqui você encontra provas de Mecânica, Termodinâmica, Óptica, etc.</p>
+    </section>
+
+    <section id="relatorios">
+      <h2>Relatórios de Física</h2>
+      <p>Relatórios sobre diversos tópicos de Física, como Termodinâmica e Óptica.</p>
+    </section>
+
+    <section id="exercicios">
+      <h2>Exercícios de Física</h2>
+      <p>Exercícios sobre Mecânica, Ondulatória e mais para praticar.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Site Educacional. Todos os direitos reservados.</p>
+    <p>Contato: info@educacional.com</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector('.nav-interna');
+      menu.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
