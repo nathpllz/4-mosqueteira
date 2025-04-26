@@ -1,24 +1,60 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Projeto de Disciplinas</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="diciplinas"></div>
-         <button class="diciplinas"></button>
-          <ul class="nav mt-5">
-            <li class="nav-item"><a class="nav-link" href="#tais">tais</a></li>
-            <li class="nav-item"><a class="nav-link" href="#ana">ana</a></li>
-            <li class="nav-item"><a class="nav-link" href="#isadora">isadora</a></li>
-            <li class="nav-item"><a class="nav-link" href="#nat">nat</a></li>
-        </ul>
-
-
-
-        
+        <nav class="menu-externo">
+            <ul>
+                <li><a href="#matematica">Matemática</a></li>
+                <li><a href="#fisica">Física</a></li>
+                <li><a href="#quimica">Química</a></li>
+            </ul>
+        </nav>
+        <nav class="menu-interno">
+            <ul>
+                <li><a href="#atividades">Atividades</a></li>
+                <li><a href="#provas">Provas</a></li>
+                <li><a href="#relatorios">Relatórios</a></li>
+            </ul>
+        </nav>
     </header>
+
+    <main>
+        <section id="matematica">
+            <h2>Matemática</h2>
+            <ul>
+                <li>Prova 1 - Álgebra</li>
+                <li>Relatório - Geometria</li>
+                <li>Atividade - Trigonometria</li>
+            </ul>
+        </section>
+
+        <section id="fisica">
+            <h2>Física</h2>
+            <ul>
+                <li>Prova 1 - Cinemática</li>
+                <li>Relatório - Dinâmica</li>
+                <li>Atividade - Termodinâmica</li>
+            </ul>
+        </section>
+
+        <section id="quimica">
+            <h2>Química</h2>
+            <ul>
+                <li>Prova 1 - Ligações Químicas</li>
+                <li>Relatório - Reações</li>
+                <li>Atividade - Química Orgânica</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Site desenvolvido para o projeto de disciplinas - 2025.</p>
+    </footer>
 </body>
 </html>
