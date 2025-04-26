@@ -1,101 +1,16 @@
-/* Fonte bonita */
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
+const sections = document.querySelectorAll('section');
 
-body {
-    margin: 0;
-    font-family: 'Quicksand', sans-serif;
-    background: linear-gradient(135deg, #ffe6f0 0%, #ffd6eb 100%);
-    color: #444;
-    overflow-x: hidden;
-}
+const showSection = () => {
+    const triggerBottom = window.innerHeight * 0.8;
 
-/* Cabeçalho */
-header {
-    background: linear-gradient(90deg, #ff66a3, #ff99cc);
-    padding: 30px 20px;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
+    sections.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
 
-header h1 {
-    margin: 0;
-    color: white;
-    font-size: 3em;
-    animation: fadeInDown 1s ease-in-out;
-}
+        if(sectionTop < triggerBottom) {
+            section.classList.add('visible');
+        }
+    });
+};
 
-/* Menus */
-nav.menu-externo, nav.menu-interno {
-    margin-top: 15px;
-}
-
-nav a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    padding: 12px 22px;
-    border-radius: 30px;
-    background: rgba(255, 255, 255, 0.2);
-    transition: all 0.3s ease;
-    display: inline-block;
-}
-
-nav.menu-externo a:hover, nav.menu-interno a:hover {
-    background-color: white;
-    color: #ff3399;
-    transform: scale(1.1);
-}
-
-/* Corpo do site */
-main {
-    padding: 50px 20px;
-}
-
-/* Seções */
-section {
-    margin: 50px auto;
-    max-width: 900px;
-    background: white;
-    border-radius: 20px;
-    padding: 30px;
-    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.6s ease-out;
-}
-
-/* Quando a seção aparece */
-section.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-section h2 {
-    color: #ff3385;
-    font-size: 2em;
-}
-
-/* Rodapé */
-footer {
-    background: #ff66a3;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 60px;
-    font-size: 1em;
-}
-
-/* Animações extras */
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+window.addEventListener('scroll', showSection);
+window.addEventListener('load', showSection);
