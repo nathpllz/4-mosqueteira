@@ -1,4 +1,3 @@
-/* Fonte bonita */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
 
 body {
@@ -9,7 +8,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Cabeçalho */
 header {
     background: linear-gradient(90deg, #ff66a3, #ff99cc);
     padding: 30px 20px;
@@ -26,7 +24,6 @@ header h1 {
     animation: fadeInDown 1s ease-in-out;
 }
 
-/* Menus */
 nav.menu-externo, nav.menu-interno {
     margin-top: 15px;
 }
@@ -49,12 +46,10 @@ nav.menu-externo a:hover, nav.menu-interno a:hover {
     transform: scale(1.1);
 }
 
-/* Corpo do site */
 main {
     padding: 50px 20px;
 }
 
-/* Seções */
 section {
     margin: 50px auto;
     max-width: 900px;
@@ -67,7 +62,6 @@ section {
     transition: all 0.6s ease-out;
 }
 
-/* Quando a seção aparece */
 section.visible {
     opacity: 1;
     transform: translateY(0);
@@ -78,7 +72,6 @@ section h2 {
     font-size: 2em;
 }
 
-/* Rodapé */
 footer {
     background: #ff66a3;
     color: white;
@@ -88,13 +81,16 @@ footer {
     font-size: 1em;
 }
 
-/* Animações extras */
 @keyframes fadeInDown {
     from {
         opacity: 0;
         transform: translateY(-20px);
     }
     to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
         opacity: 1;
         transform: translateY(0);
     }
